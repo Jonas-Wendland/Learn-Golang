@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	fmt.Println("Hello, World!", rand.Intn(10))
 }
