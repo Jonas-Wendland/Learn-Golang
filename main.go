@@ -17,4 +17,6 @@ func main() {
 	fmt.Println(calculator.SumUntil(1000))
 
 	fmt.Println(calculator.IsSqaureNumber(25))
+
+	fmt.Println(calculator.MultiplyFromAToB(1, 10))
 }
