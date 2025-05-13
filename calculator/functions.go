@@ -17,3 +17,19 @@ func IsSqaureNumber(value int) bool {
 	}
 	return true
 }
+
+func RunOperation(operation string, left, right int) int {
+	op := operation
+
+	var result int
+
+	switch op {
+	case "add":
+		result = left + right
+	case "subtract":
+		result = left - right
+	default:
+		// Intentionally left blank
+	}
+	return result
+}
