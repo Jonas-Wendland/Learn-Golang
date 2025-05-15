@@ -22,4 +22,9 @@ func main() {
 	fmt.Println(calculator.MultiplyFromAToB(1, 10))
 
 	fmt.Println(composite.Add(23, 42))
+
+	point := composite.Point{X: 3, Y: 7}
+	fmt.Println(point.X, point.Y)
+
+	composite.DemoCollections()
 }
