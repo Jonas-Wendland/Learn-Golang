@@ -12,10 +12,18 @@ func MultiplyFromAToB(a, b int) int {
 	})
 }
 
+func AddX(x int) func(int) int {
+	return func(y int) int {
+		return x + y
+	}
+}
+
 func ProcessFromAToB(a, b, initValue int, fn func(int, int) int) int {
+	increment := AddX(1)
+
 	if a > b {
 		return initValue
 	}
 
-	return fn(a, ProcessFromAToB(a+1, b, initValue, fn))
+	return fn(a, ProcessFromAToB(increment(a), b, initValue, fn))
 }
