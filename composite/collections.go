@@ -18,4 +18,19 @@ func DemoCollections() {
 	fmt.Println(len(primesSlice))
 	fmt.Println(cap(primesSlice))
 
+	for _, value := range primesSlice {
+		fmt.Println(value)
+	}
+
+	points := map[string]Point{
+		"A": *NewPoint(3, 7),
+		"B": *NewPoint(2, 3),
+	}
+	fmt.Println(points)
+	somePoint, ok := points["D"]
+	fmt.Println(somePoint, ok)
+
+	points["E"] = *NewPoint(1, 1)
+	delete(points, "A")
+	fmt.Println(points)
 }

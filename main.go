@@ -23,8 +23,10 @@ func main() {
 
 	fmt.Println(composite.Add(23, 42))
 
-	point := composite.Point{X: 3, Y: 7}
+	point := composite.Point{X: 1, Y: 1}
 	fmt.Println(point.X, point.Y)
 
-	composite.DemoCollections()
+	// composite.DemoCollections()
+
+	fmt.Println(point.DistanceFromZero())
 }
