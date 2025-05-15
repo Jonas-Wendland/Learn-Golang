@@ -5,6 +5,7 @@ import (
 	"math/rand"
 
 	"github.com/Jonas-Wendland/Learn-Golang/calculator"
+	"github.com/Jonas-Wendland/Learn-Golang/composite"
 )
 
 func main() {
@@ -19,4 +20,6 @@ func main() {
 	fmt.Println(calculator.IsSqaureNumber(25))
 
 	fmt.Println(calculator.MultiplyFromAToB(1, 10))
+
+	fmt.Println(composite.Add(23, 42))
 }
