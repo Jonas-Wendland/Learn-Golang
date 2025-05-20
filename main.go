@@ -36,7 +36,10 @@ func main() {
 	// sorting_algorithm.BlockSort(array)
 	// fmt.Println("BlockSort:", array)
 
-	sorting_algorithm.HeapSort(array)
-	fmt.Println("Heapsort:", array)
+	// sorting_algorithm.HeapSort(array)
+	// fmt.Println("Heapsort:", array)
 
+	n := len(array)
+	sorting_algorithm.QuickSort(array, 0, n-1)
+	fmt.Println("Quicksort:", array)
 }
